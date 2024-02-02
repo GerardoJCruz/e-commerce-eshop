@@ -9,6 +9,8 @@ import { useStateValue } from './StateProvider';
 function Header() {
     const [{basket}, dispatch] = useStateValue()
 
+    console.log(dispatch);
+
     return (
         <div className='header'>
             <Link to='/' style={{ textDecoration: 'none' }}>

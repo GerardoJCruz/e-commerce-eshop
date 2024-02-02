@@ -18,7 +18,6 @@ function Home() {
                             rating={3}
                         />
                         
-
                         <Product
                             id="124321"
                             title="This is an extended title to see how the product description should look like in with a large content This is an extended title to see how the product description should look like in with a large content"

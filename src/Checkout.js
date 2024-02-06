@@ -21,7 +21,7 @@ function Checkout() {
                         <CheckoutProduct 
                             id = {item.id}
                             title = {item.title}
-                            image = {item.title}
+                            image = {item.image}
                             price = {item.price}
                             rating = {item.rating}
                         />

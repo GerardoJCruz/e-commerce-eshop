@@ -8,6 +8,7 @@ function Login() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    // const [error, setError] = useState('');
 
     const signIn = e => {
         e.preventDefault();
@@ -17,7 +18,7 @@ function Login() {
             .then(auth => {
                 navigate('/');
             })
-            .catch(error => console.error(error.message));
+            .catch(error => alert('password or email wrong'));
 
     }
 
@@ -31,7 +32,7 @@ function Login() {
                     navigate('/');
                 }
             })
-            .catch(error => console.error(error.message));
+            .catch(error => alert('password or email wrong'));
 
     }
 
@@ -64,6 +65,7 @@ function Login() {
 
                 <button className='login__registerButton' onClick={register}>Create your eShop Account</button>
             </div>
+            {/* {error && <p>{error}</p>} */}
         </div>
     )
 }
